@@ -27,3 +27,11 @@ color: black;
 background-color: #2bb8bd;
 color: white;
 }
+
+#story{
+	float: left;
+	text-align: center;
+	padding-left: 50px;
+	font-size: 12px;
+	width: 70%;
+}

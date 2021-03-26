@@ -4,6 +4,11 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+     src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="5v3s3ZTy"></script>
+
     <div id="menu">
       <a classs="active" href="#about">About Me</a>
       <a href="#photos">My Photos</a>
@@ -15,10 +20,8 @@
     </div>
           
     <section id="about" class="section">
-    <br>  
-    about me
-    <br/>
-    <div>
+    <br>about me<br/>
+    <div id="story">
       <p>This web page is a humbly devoted to the most interesting guy I've ever known, my grandpa Naum Dorfman.</p>
       <p>Naum has been born in 1940 to a jewish family a year before 2nd ww has stuck russia. One year old whose father had been drafted 
         into the army, had to escape approaching nazi forces. Naum's mother Faina Dorfman took four children including my one year
@@ -34,7 +37,7 @@
       </p>
       <p>In 1964 my grandpa married my beautiful grandma who he loved deeply, but bacause his parents didn't accept her he had to
         relocate from his birth town and move to a place where he could find a job - a village near the city Krasnoyarsk, Siberia.
-        There, under extreme coldness (I assume) my father has been born, In the middle of a forrest! That's why I am a toughie
+        There, under extreme coldness (I assume) my father has been born, In the middle of a forest! That's why I am a toughie
         - runs in the blood.
       </p>
       <p>
@@ -73,20 +76,9 @@
 
     <section id="playlist" class="section">
     <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3pZHgZfNhc0" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br/>
     my playlist
     <br/>
@@ -113,7 +105,8 @@
     <br/>
     give me a like
     <br/>
-    <br/>
+    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
+     data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
     <br/>
     </section>
 

@@ -23,12 +23,12 @@
     <br>about me<br/>
     <div id="story">
       <p>This web page is a humbly devoted to the most interesting guy I've ever known, my grandpa Naum Dorfman.</p>
-      <p>Naum has been born in 1940 to a jewish family a year before 2nd ww has stuck russia. One year old whose father had been drafted 
+      <p>Naum was born in 1940 to a jewish family a year before 2nd ww has stuck russia. One year old whose father had been drafted 
         into the army, had to escape approaching nazi forces. Naum's mother Faina Dorfman took four children including my one year
         old grandpa and evacuated to northen russia. During war his father served in the protecting forces near Leningrad, 
         a famous historical blockade called "The Siege of Leningrad" for which he recieved an order of the red star for bravery.
         At the end of the war by some mircle my grandpa, his mother and two sisters who survived the war reunited with their
-        father and relocated back to the city were my grandfather Naum has been born - Polotsk. 
+        father and relocated back to the city were my grandfather Naum was born - Polotsk. 
       </p>
       <p>His military service my grandpa undertook in a northen russian iceland called "Novaya Zemlya". Novaya Zemlya was the site
         of one of the two major nuclear test sites managed by the USSR, used for air drops and underground testing of the largest
@@ -37,14 +37,14 @@
       </p>
       <p>In 1964 my grandpa married my beautiful grandma who he loved deeply, but bacause his parents didn't accept her he had to
         relocate from his birth town and move to a place where he could find a job - a village near the city Krasnoyarsk, Siberia.
-        There, under extreme coldness (I assume) my father has been born, In the middle of a forest! That's why I am a toughie
-        - runs in the blood.
+        There, under extreme coldness (I assume) my father has been born, In the middle of a forest!
       </p>
       <p>
         My father and his little sister grew up in that same city their ancestors lived generations in - Polotsk, where their mad parents
         later returned. In 1991 my father moved to Israel, and in 1993 his parents and younger sister followed him. This day my
-        cool grandpa is a cute old man who you'd never assume has such an interesting past. I love my grandpa and I think he cooks
-        the best cabbage soup (Shchi) in the world.
+        cool grandpa is a cute old man who you'd never assume has such an interesting past. From a kid who survived the war and the
+        following hungry years in russia, brave soldier who helped scientists research radioactive lands to a kind and carrying family man.
+        I love my grandpa and I think he cooks the best cabbage soup in the world(russian soup called Shchi).
       </p>
 
     </div>
@@ -53,6 +53,27 @@
 
     <section id="photos" class="section">
     my photos
+    <br/>
+    <br/>
+            
+    <p>Slideshow:</p>
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="pic1.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides2">
+        <img src="pic2.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides2">
+        <img src="pic3.jpg" style="width:100%">
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
     <br/>
     <br/>
     <br/>
@@ -147,5 +168,25 @@
         $('#menu').toggle($(this).scrollTop()>1000)
     });​
     </script>
+          
+    <script>
+      var slideIndex = 1;
+      showSlides(1);
+      
+      function plusSlides(n){
+        showSlides(slideIndex += n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script> 
   </body>
 </html>

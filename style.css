@@ -28,7 +28,9 @@ background-color: #2bb8bd;
 color: white;
 }
 
-#story{
+#story
+{
+	background-color: red;
 	float: left;
 	text-align: center;
 	padding-left: 50px;

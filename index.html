@@ -28,12 +28,12 @@
     <br/>
     <br/>  
     <section id="about" class="section">
-      <h1>About</h1>
+      <div class="bold"><div class="heading"><h1>About</h1></div></div>
       <div id="story">
-      <p>This web page is a humbly devoted to the most interesting guy I've ever known, my grandpa Naum Dorfman.</p>
-      <p>Naum was born in 1940 to a jewish family a year before 2nd ww has stuck russia. One year old whose father had been drafted 
+      <p>This web page is a humbly devoted to the most interesting guy I've ever known, my grandpa <br/>Naum Dorfman.</p>
+      <p>Naum was born in 1940 to a jewish family a year before 2nd ww stuck russia. One year old whose father had been drafted 
         into the army, had to escape approaching nazi forces. Naum's mother Faina Dorfman took four children including my one year
-        old grandpa and evacuated to northen russia. During war his father served in the protecting forces near Leningrad, 
+        old grandpa and evacuated to eastern russia. During war his father served in the protecting forces near Leningrad, 
         a famous historical blockade called "The Siege of Leningrad" for which he recieved an order of the red star for bravery.
         At the end of the war by some mircle my grandpa, his mother and two sisters who survived the war reunited with their
         father and relocated back to the city were my grandfather Naum was born - Polotsk. 
@@ -59,66 +59,66 @@
     <br/>
     </section>
 
-    <section id="photos" class="section">
-    <h1>Photos</h1>
+    <!-- PHOTOS -->
+    <section id="photos" class="section" style="height: 530px;">
+    <div class="bold"><div class="heading"><h1>Photos</h1></div></div>
             
-    <div class="slideshow-container">
-      <div class="mySlides">
-        <img src="p1.jpg" width="100%">
-      </div>
-    
-      <div class="mySlides" width="100%">
-        <img src="p2.jpg">
-      </div>
-    
-      <div class="mySlides">
-        <img src="p3.jpg" width="100%">
-      </div>
-    
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
+    <div id="blackShadow">
+      <div class="slideshow-container">
 
-    <br/>
-    <br/>
-    <br/>
+        <div class="mySlides">
+
+          <img src="p1.jpeg" style="width:100%; height: 450px;" alt="" />
+          
+          <h2><span>A Movie in the Park:<span class='spacer'></span><br /><span class='spacer'></span>Kung Fu Panda</span></h2>
+    
+        </div>
+      
+        <div class="mySlides">
+          <img src="p2.jpeg" style="width:100%; height: 450px;">
+        </div>
+      
+        <div class="mySlides">
+          <img src="p3.jpeg" style="width:100%; height: 450px;">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
     </section>
 
+    <!-- PLAYLIST -->
     <section id="playlist" class="section">
-    <br/>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3pZHgZfNhc0" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <br/>
-    <h1>Playlist</h1>
-    <br/>
-    <br/>
-    <br/>
+    <div class="bold"><div class="heading"><h1>Playlist</h1></div></div>
+    <div style="padding-left: 30%; padding-top: 10px; padding-bottom: 10px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/MNy65TItXnU"
+       title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     </section>
 
     <section id="like" class="section">
-    give me a like
-    <h1>Like this page</h1>
+    <div class="bold"><div class="heading"><h1>Like this page</h1></div></div>
     <br/>
     <div class="fb-like" data-href="https://web-development-environments-2021.github.io/assignment1-Gitthusiast/"
-     data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+     data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true" style="left: 40%;"></div>
     <br/>
     </section>
 
+    <!-- QRCODE -->
     <section id="qrcoder" class="section">
-
-    <h1>Scan code</h1>
+    <div class="bold"><div class="heading"><h1>Scan code</h1></div></div>
     <br/>
-    <img id="QrCode" src="QrCode.png" width="300" height="300">
-    <br/>
-    <br/>
+    <div style="padding-left: 40%;"><img id="QrCode" src="QrCode.png" width="300" height="300"></div>    
     </section>
 
+    <!-- Q&A -->
     <section id="spa" class="section">
     <br/>
-    <h1>Q&A</h1>
+    <div class="bold"><div class="heading"><h1>Q&A</h1></div></div>
     <br/>
-    <p>Web1 was the very beginning of the world wide web, it's main purpose was to present data.
+    <p class = "text">Web1 was the very beginning of the world wide web, it's main purpose was to present data.
         Whereas web2 braught us the integration, the ability to share information and learn from our peers.
         Web3 made things a bit smarter, turning the web to semantic web allowing information to link to each other
         tagging information automaticaly.</p>
@@ -151,11 +151,19 @@
       </tr>
     </tbody></table>
     <br/>
+    <h2 class="text">Learning with an example</h2>
+    <p class="text">Say my grandpa asked me to buy him a swiss army knife and I would put a query "swiss army knife" in the search engine</p>
+    <ul class="text">
+      <li><p>Web 1.0 would direct me to a static web page with information about swiss knifes and maybe a cell phone to call a store that cells them</p></li>
+      <li><p>Web 2.0 would direct me into a dynamic web-store that would take my order and inform me about the shipping status as it changes</p></li>
+      <li><p>Web 3.0 would show me advertisements of swiss army knifes or maybe home tools or just knifes, while I browse other sites.</p>
+      </li>
+    </ul>    
     <br/>
     </section>
 
     <section id="contact" class="section">
-    <h1>Contact me</h1>
+    <div class="bold"><div class="heading"><h1>Contact me</h1></div></div>
     <br/>
     <br/>
     <br/>
@@ -192,7 +200,8 @@
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
         }
-        x[slideIndex-1].style.display = "block";  
+        x[slideIndex-1].style.display = "block";
+          
       }
       </script> 
   </body>

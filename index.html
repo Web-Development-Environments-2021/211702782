@@ -70,16 +70,18 @@
 
           <img src="p1.jpeg" style="width:100%; height: 450px;" alt="" />
           
-          <h2><span>A Movie in the Park:<span class='spacer'></span><br /><span class='spacer'></span>Kung Fu Panda</span></h2>
+          <h2><span>My grandfather:<span class='spacer'></span><br /><span class='spacer'></span>Naum Dorfman</span></h2>
     
         </div>
       
         <div class="mySlides">
-          <img src="p2.jpeg" style="width:100%; height: 450px;">
+          <img src="p2.jpeg" style="width:100%; height: 450px;" alt="" />
+          <h2><span>During his service<span class='spacer'></span><br /><span class='spacer'></span>at Novaya Zemlya</span></h2>
         </div>
       
         <div class="mySlides">
           <img src="p3.jpeg" style="width:100%; height: 450px;">
+          <h2><span>His father<span class='spacer'></span><br /><span class='spacer'></span>after 2nd ww</span></h2>
         </div>
       
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -162,10 +164,28 @@
     <br/>
     </section>
 
-    <section id="contact" class="section">
+    <!-- CONTACT -->
+    <section id="contact" class="mailContainer">
     <div class="bold"><div class="heading"><h1>Contact me</h1></div></div>
     <br/>
-    <br/>
+    <form action="mailto:dorfmag@post.bgu.ac.il" method="POST" enctype="text/plain">
+        <h1>Contact Me</h1>
+        <p>Have you got any questions for Naum? <br/> Fill down the following forms and we will return to you.</p>
+        <hr/>
+        <p><strong>Email:</strong> 
+          <textarea id="Email" rows="4" cols="36"></textarea>
+        </p>
+        <p><strong>Subject:</strong> 
+          <textarea id="Subject" type="text"></textarea>
+        </p>
+        <div>
+          <span id="grandfather" onclick="addEmoji(127995)">👴🏻</span>
+          <span id="cool" onclick="addEmoji(127999)"> ✌🏻 </span>
+          <span id="love" onclick="addEmoji(128525)">😍</span>          
+        </div>
+        <input type="submit" value="Submit Your Entries">
+        <input type="reset" value="Clear Your Entries">
+    </form>>
     <br/>
     </section>
 
@@ -202,6 +222,13 @@
         }
         x[slideIndex-1].style.display = "block";
           
+      }
+      </script>
+      <script>
+      function addEmoji(emojiHex) {
+      var subject = document.getElementById("Subject");
+      subject.value += String.fromCodePoint(emojiHex);
+      subject.value += "hellooo frommm theee othheerrr siddeee";
       }
       </script> 
   </body>

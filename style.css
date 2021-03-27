@@ -94,9 +94,9 @@ margin: auto;
 	width: 100%; /* for IE 6 */
  }
  
- .mySlides .h2 { 
+ .mySlides h2 { 
 	position: absolute; 
-	top: 0; 
+	top: 350px; 
 	left: 0; 
 	width: 100%; 
  }
@@ -105,7 +105,7 @@ margin: auto;
 	font-family:Georgia, 'Times New Roman', Times, serif;
 	letter-spacing: -1px;  
 	background: rgb(0, 0, 0); /* fallback color */
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.5);
  }
 
 
@@ -145,4 +145,11 @@ color: black;
 .text{
 	width: 60%;
 	padding-left: 15%;
+}
+
+.mailContainer
+{
+	box-shadow: rgba(71, 21, 41, 0.65);
+	width: 50 vw;
+	border-color: black;
 }

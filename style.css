@@ -95,3 +95,8 @@ color: black;
 	font-size: 15px;
 	font-family: 'Shadows Into Light', cursive;
 }
+
+#QrCode
+{
+	background-image: url("frame.png");
+}

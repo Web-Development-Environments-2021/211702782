@@ -3,8 +3,9 @@ body{
 	background-image: url("b1.jpg");
 }
 
-p, h1{
-	padding-top: 10px;
+h1{
+	left: 10px;
+	font-family: 'Shadows Into Light', cursive;
 }
 
 #top-bar

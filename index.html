@@ -184,7 +184,7 @@
             <!-- CONTENT -->
             <div class="formElement">
               <p id="message" class="font"><strong>message:</strong> 
-                <textarea id="message" class="font" required></textarea>
+                <textarea id="content" class="font" required></textarea>
               </p>
             </div>
             <!-- LIST OF EMOJIS -->
@@ -238,7 +238,7 @@
       </script>
       <script>
       function addEmoji(emojiHex) {
-      var subject = document.getElementById("message");
+      var subject = document.getElementById("content");
       subject.value += String.fromCodePoint(emojiHex);
       }
       </script> 

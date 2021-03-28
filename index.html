@@ -157,7 +157,7 @@
     <h2 class="text">Learning with an example</h2>
     <p class="text">Say my grandpa asked me to buy him a swiss army knife and I would put a query "swiss army knife" in the search engine</p>
     <ul class="text">
-      <li><p>Web 1.0 would direct me to a static web page with information about swiss knifes and maybe a cell phone to call a store that cells them</p></li>
+      <li><p>Web 1.0 would direct me to a static web page with information about swiss knifes and maybe a cell phone number so I could call a store that sells them</p></li>
       <li><p>Web 2.0 would direct me into a dynamic web-store that would take my order and inform me about the shipping status as it changes</p></li>
       <li><p>Web 3.0 would show me advertisements of swiss army knifes or maybe home tools or just knifes, while I browse other sites.</p>
       </li>
@@ -165,28 +165,39 @@
     <br/>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="mailContainer">
+    <!-- HEADING -->
     <div class="bold"><div class="heading"><h1>Contact me</h1></div></div>
     <br/>
-    <form action="mailto:dorfmag@post.bgu.ac.il" method="POST" enctype="text/plain">
-        <h1>Contact Me</h1>
-        <p>Have you got any questions for Naum? <br/> Fill down the following forms and we will return to you.</p>
-        <hr/>
-        <p><strong>Email:</strong> 
-          <textarea id="Email" rows="4" cols="36"></textarea>
-        </p>
-        <p><strong>Subject:</strong> 
-          <textarea id="Subject" type="text"></textarea>
-        </p>
-        <div>
-          <span id="grandfather" onclick="addEmoji(127995)">👴🏻</span>
-          <span id="cool" onclick="addEmoji(127999)"> ✌🏻 </span>
-          <span id="love" onclick="addEmoji(128525)">😍</span>          
-        </div>
-        <input type="submit" value="Submit Your Entries">
-        <input type="reset" value="Clear Your Entries">
-    </form>>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <form action="mailto:dorfmag@post.bgu.ac.il" method="POST" enctype="text/plain">
+          <!-- INFORAMATION -->
+            <p class="font">Have you got any questions for Naum? <br/> Fill down the following form and we will return to you.</p>
+            <hr/>
+            <div class="formElement">
+              <!-- Email -->
+              <p class="font"><strong>Email:</strong> 
+              <textarea id="email" class="font" required></textarea>
+            </p>
+            </div>
+            <!-- CONTENT -->
+            <div class="formElement">
+              <p id="message" class="font"><strong>message:</strong> 
+                <textarea id="message" class="font" required></textarea>
+              </p>
+            </div>
+            <!-- LIST OF EMOJIS -->
+            <div id="emojis" class="formElement">
+              <span id="grandfather" onclick="addEmoji(128116)">👴🏻</span>
+              <span id="cool" onclick="addEmoji(9996)"> ✌🏻 </span>
+              <span id="love" onclick="addEmoji(128525)">😍</span>          
+            </div>
+            <hr>
+            <input type="submit" value="Send" class="font">
+            <input type="reset" value="Clear" class="font">
+        </form>    
+      </div>    
     <br/>
     </section>
 
@@ -227,9 +238,8 @@
       </script>
       <script>
       function addEmoji(emojiHex) {
-      var subject = document.getElementById("Subject");
+      var subject = document.getElementById("message");
       subject.value += String.fromCodePoint(emojiHex);
-      subject.value += "hellooo frommm theee othheerrr siddeee";
       }
       </script> 
   </body>

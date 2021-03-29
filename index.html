@@ -14,7 +14,7 @@
     <script async defer crossorigin="anonymous"
      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="5v3s3ZTy"></script>
 
-    <div id="top-bar" >
+    <div id="top-bar">
       <img src="logo2.png" style="height: 80%; padding-left: 30px; padding-top: 10px;"/>
       <div id="menu">
         <a href="#about">About</a>
@@ -178,13 +178,13 @@
             <div class="formElement">
               <!-- Email -->
               <p class="font"><strong>Email:</strong> 
-              <input type="text" name="email" id="email" class="font" required></input>
+              <input type="text" name="email" id="email" class="font" style="width: 97%;" required></input>
             </p>
             </div>
             <!-- CONTENT -->
             <div class="formElement">
-              <p id="message" class="font"><strong>message:</strong> 
-                <textarea id="content" class="font" required></textarea>
+              <p id="content" class="font"><strong>message:</strong> 
+                <textarea id="message" name="message" class="font" style="border-width: 2px;" required></textarea>
               </p>
             </div>
             <!-- LIST OF EMOJIS -->
@@ -194,8 +194,8 @@
               <span id="love" onclick="addEmoji(128525)">😍</span>          
             </div>
             <hr>
-            <input type="submit" value="Send" class="font">
-            <input type="reset" value="Clear" class="font">
+            <input type="submit" value="Send" class="btn">
+            <input type="reset" value="Clear" class="btn">
         </form>    
       </div>    
     <br/>

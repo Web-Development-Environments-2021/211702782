@@ -178,13 +178,13 @@
             <div class="formElement">
               <!-- Email -->
               <p class="font"><strong>Email:</strong> 
-              <input type="text" name="email" id="email" class="font" required></input>
+              <input type="text" name="email" id="email" class="font" style="width: 97%;" equired></input>
             </p>
             </div>
             <!-- CONTENT -->
             <div class="formElement">
               <p id="content" class="font"><strong>message:</strong> 
-                <textarea id="message" name="message" class="font" required></textarea>
+                <textarea id="message" name="message" class="font" style="border-width: 2px;" required></textarea>
               </p>
             </div>
             <!-- LIST OF EMOJIS -->
@@ -238,7 +238,7 @@
       </script>
       <script>
       function addEmoji(emojiHex) {
-      var subject = document.getElementById("content");
+      var subject = document.getElementById("message");
       subject.value += String.fromCodePoint(emojiHex);
       }
       </script> 
